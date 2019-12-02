@@ -24,10 +24,15 @@ def directors_totals(nds)
   gross_hash = {}
   
   while director_num < nds.length do
+    gross = 0
     gross_hash[nds[director_num][:name]] = 0
-  
-  
-  director_num += 1
+    
+    while movie_num < nds[director_num][:movies].length do
+      gross += nds[director_num][:movies][movie_num][:worldwide_gross]
+      movie_num += 1
+    end
+    gross_hash[nds[director_num][:name]] = gross
+    director_num += 1
   end
   gross_hash
 end
