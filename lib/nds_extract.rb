@@ -29,5 +29,5 @@ def directors_totals(nds)
   
   director_num += 1
   end
-  pp gross_hash
+  gross_hash
 end
