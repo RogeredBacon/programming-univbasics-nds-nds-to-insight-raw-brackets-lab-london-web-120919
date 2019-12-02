@@ -3,8 +3,8 @@ require 'directors_database'
 
 def directors_totals(nds)
   require 'pp'
-    pp nds[0][:movies][0][:title]
-  pp nds[0][:movies][0][:worldwide_gross]
+    pp nds[0][:movies][1][:title]
+  pp nds[0][:movies][1][:worldwide_gross]
   # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
   #
