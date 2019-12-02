@@ -24,8 +24,8 @@ def directors_totals(nds)
   gross_hash = {}
   
   while director_num < nds.length do
-    gross_hash.push 
+    gross_hash[nds[director_num][:name]] = 0
   
-  
-  nil
+  end
+  gross_hash
 end
