@@ -20,10 +20,10 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   director_num = 0
-  movie_num = 0
   gross_hash = {}
   
   while director_num < nds.length do
+    movie_num = 0
     gross = 0
     gross_hash[nds[director_num][:name]] = 0
     
