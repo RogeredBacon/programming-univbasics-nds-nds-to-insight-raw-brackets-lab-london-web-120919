@@ -34,5 +34,5 @@ def directors_totals(nds)
     gross_hash[nds[director_num][:name]] = gross
     director_num += 1
   end
-  gross_hash
+  pp gross_hash
 end
