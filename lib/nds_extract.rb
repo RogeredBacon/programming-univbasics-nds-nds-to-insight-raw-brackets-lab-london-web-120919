@@ -26,6 +26,8 @@ def directors_totals(nds)
   while director_num < nds.length do
     gross_hash[nds[director_num][:name]] = 0
   
+  
+  directors_num += 1
   end
   gross_hash
 end
